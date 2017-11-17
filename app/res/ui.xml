@@ -1,0 +1,293 @@
+﻿<Root>
+
+ <Screen name="320x240" width="320" height="240">
+
+    <Page name="SYS_STATUSBAR.xml" "title="home" x="0" y="0" layoutWidth="320" layoutHeight="20" bgColor="#000000">
+         <TextBox  name="StatusbarTextTime" x="120" y="0" layoutWidth="80" layoutHeight="20" fgColor="#FFFFFF" fontSize="18" textAlign="CENTER_CENTER"></TextBox>
+    </Page>
+    
+	    <Page name="SYS_PROMPT.xml" title="home" x="0" y="0" layoutWidth="240" layoutHeight="320" bgColor="#FFFFFF">
+     <TextBox  name="txt" x="0" y="0" layoutWidth="240" layoutHeight="320" fgColor="#000000" fontSize="30" textAlign="CENTER_LEFT"></TextBox>
+    </Page> 
+
+	<Page name="getcard.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+	   <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="desktop_h.png"></PictureBox>
+	</Page>
+
+
+    <Page name="getcard_2d.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+	   <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="desktop_h.png"></PictureBox>
+	</Page>
+	
+	<Page name="insert_card.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="insert_card_h.png"></PictureBox>
+	</Page>
+	
+	<Page name="swipe_card.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="swipe_card_h.png"></PictureBox>
+	</Page>
+
+
+<!--确认卡号界面(卡号)-->
+   <Page name="disp_cardno.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+    <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="confirm_account_h.png"></PictureBox> 
+    <TextBox  name="txt"  x="5"  y="94" layoutWidth="320" layoutHeight="27" fgColor="#000000" fontSize="22" textAlign="CENTER_CENTER"></TextBox>
+    <Button  name="cancle"  x="3"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancel.png" imageReleased="cancel.png"></Button>
+	<Button  name="enter"  x="264"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enter.png" imageReleased="enter.png"></Button>
+   </Page>
+
+
+<!--普通金额界面-->
+   <Page name="amt.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgcolor="#FFFFFFFF">
+      <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="input_amount_h.png"></PictureBox>
+      <TextBox  name="txt" type="3" x="48" y="96" layoutWidth="220" layoutHeight="28" fgColor="#000000" fontSize="28" textAlign="CENTER_RIGHT"></TextBox>
+      <Button  name="cancle"  x="3"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancel.png" imageReleased="cancel.png"></Button>
+      <Button  name="clear"  x="178"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="18" enabled="TRUE" bell="1" imagePressed="clear.png" imageReleased="clear.png"></Button>
+      <Button  name="enter"  x="264"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enter.png" imageReleased="enter.png"></Button>
+   </Page> 
+
+
+<!--采集密码-->
+    <Page name="getpin2.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgcolor="#FFFFFFFF">
+      <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="input_pin_h.png"></PictureBox>
+	</Page>
+	
+	<Page name="getpin.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgcolor="#FFFFFFFF">
+		<PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="input_pin2_h.png"></PictureBox>
+		<TextBox  name="txt" type="2" x="40" y="98" layoutWidth="230" layoutHeight="25" fgColor="#000000" fontSize="25" textAlign="CENTER_RIGHT" ></TextBox>
+		<Button  name="cancle"  x="3"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancel.png" imageReleased="cancel.png"></Button>
+		<Button  name="clear"  x="178"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="18" enabled="TRUE" bell="1" imagePressed="clear.png" imageReleased="clear.png"></Button>
+		<Button  name="enter"  x="264"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enter.png" imageReleased="enter.png"></Button>
+	</Page>
+
+
+<!--签名板-->
+    <Page name="signatureboard.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFF">
+      <PictureBox name="picture" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#00000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="signature_h.png" displayPattern="0"></PictureBox>
+    </Page>
+  
+   <Page name="processing.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="processing_h.png"></PictureBox>
+   </Page>
+
+
+   <Page name="nopaper.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+        <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="out_off_paper_h.png"></PictureBox>
+		<Button  name="cancle"  x="3"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancel.png" imageReleased="cancel.png"></Button>
+		<Button  name="enter"  x="264"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enter.png" imageReleased="enter.png"></Button>
+  </Page>
+
+
+
+   <Page name="ScreenSaver1.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="ScreenSaver1_h.png"></PictureBox>
+   </Page>
+
+
+
+   <Page name="ScreenSaver2.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+    <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="ScreenSaver2_h.png"></PictureBox>
+   </Page>
+
+
+
+   <Page name="ScreenSaver3.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="ScreenSaver3_h.png"></PictureBox>
+   </Page>
+
+
+
+   <Page name="ScreenSaver4.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="ScreenSaver4_h.png"></PictureBox>
+   </Page>
+
+
+
+   <Page name="exit.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="exit_bg_h.png"></PictureBox>
+	 <Button  name="cancel"  x="3"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancel.png" imageReleased="cancel.png"></Button>
+	 <Button  name="enter"  x="264"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enter.png" imageReleased="enter.png"></Button>
+   </Page>
+
+
+
+   <Page name="complete.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+    <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="complete_h.png"></PictureBox>
+	<Button  name="enter"  x="264"  y="185" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enter.png" imageReleased="enter.png"></Button>
+   </Page>
+ 
+
+   <Page name="print.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+	  <PictureBox name="logo" x="0" y="0" layoutWidth="320" layoutHeight="240" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="printing_h.png"></PictureBox>
+   </Page>
+
+
+   <Page name="scan_success.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+   </Page>
+ 
+
+   <Page name="scan_result.xml" title="home" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#FFFFFFFF">
+   </Page>
+
+
+   <Page name="boot_animation.xml" title="home" x="0" y="0" layoutWidth="320" layoutHeight="240" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="boot_h.gif"></PictureBox>
+   </Page>
+ 
+
+   <Page name="remove_card.xml" title="home" x="0" y="0" layoutWidth="320" layoutHeight="240" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="20" layoutWidth="320" layoutHeight="220" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="remove_card_h.png"></PictureBox>
+   </Page>
+   
+ </Screen>
+ 
+ <Screen name="240x320" width="240" height="320">
+ 
+    <Page name="SYS_STATUSBAR.xml" title="home" x="0" y="0" layoutWidth="240" layoutHeight="20" bgColor="#000000">
+         <TextBox  name="StatusbarTextTime" x="80" y="0" layoutWidth="80" layoutHeight="20" fgColor="#FFFFFF" fontSize="18" textAlign="CENTER_CENTER"></TextBox>
+    </Page>
+    
+    <Page name="SYS_PROMPT.xml" title="home" x="0" y="0" layoutWidth="240" layoutHeight="320" bgColor="#FFFFFF">
+     <TextBox  name="txt" x="0" y="0" layoutWidth="240" layoutHeight="320" fgColor="#000000" fontSize="30" textAlign="CENTER_LEFT"></TextBox>
+    </Page> 
+	
+	<Page name="getcard.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="desktop.png"></PictureBox>
+	</Page>
+	
+	<Page name="getcard_2d.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="desktop_2d.png"></PictureBox>
+	</Page>
+	
+	<Page name="insert_card.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="insert_card.png"></PictureBox>
+	</Page>
+	
+	<Page name="swipe_card.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="swipe_card.png"></PictureBox>
+	</Page>
+	
+	<!--确认卡号界面(卡号)-->
+	<Page name="disp_cardno.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="confirm_account.png"></PictureBox> 
+     <TextBox  name="txt"  x="12"  y="138" layoutWidth="220" layoutHeight="27" fgColor="#000000" fontSize="22" textAlign="CENTER_CENTER"></TextBox>
+     <Button  name="cancle"  x="5"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancelp.png" imageReleased="cancel.png"></Button>
+	 <Button  name="enter"  x="180"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enterp.png" imageReleased="enter.png"></Button>
+    </Page>
+	
+	
+	<!--普通金额界面-->
+	<Page name="amt.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgcolor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="input_amount.png"></PictureBox>
+     <TextBox  name="txt" type="3" x="30" y="136" layoutWidth="178" layoutHeight="28" fgColor="#000000" fontSize="26" textAlign="CENTER_RIGHT"></TextBox>
+     <Button  name="cancle"  x="5"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancelp.png" imageReleased="cancel.png"></Button>
+     <Button  name="clear"  x="93"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="18" enabled="TRUE" bell="1" imagePressed="clearp.png" imageReleased="clear.png"></Button>
+     <Button  name="enter"  x="182"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enterp.png" imageReleased="enter.png"></Button>
+   </Page>
+   
+   
+   <!--采集密码-->
+    <Page name="getpin.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgcolor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="input_pin.png"></PictureBox>
+     <TextBox  name="txt" type="2" x="30" y="138" layoutWidth="178" layoutHeight="26" fgColor="#000000" fontSize="26" textAlign="CENTER_RIGHT"></TextBox>
+     <Button  name="cancle"  x="5"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancelp.png" imageReleased="cancel.png"></Button>
+     <Button  name="clear"  x="93"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="18" enabled="TRUE" bell="1" imagePressed="clearp.png" imageReleased="clear.png"></Button>
+     <Button  name="enter"  x="182"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enterp.png" imageReleased="enter.png"></Button>
+	</Page>
+	
+	
+	<!--签名板-->
+	<Page name="signatureboard.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFF">
+	 <PictureBox name="picture" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#00000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="signature.png" displayPattern="0"></PictureBox>
+	 <SignatureBoard name="sign"  x="0"  y="75" layoutWidth="240" layoutHeight="150" bgColor="#FFFFFFFF" brushColor="#FF000000" brushWidth="2" brushStyle="0" outputEnabled="FALSE" outputDelayTime="10"></SignatureBoard>
+	 <TextBox  name="signtxt"  x="0"  y="75" layoutWidth="240" layoutHeight="150" bgColor="#DFDFDF" fgColor="#000000"  fontSize="30"textAlign="CENTER_CENTER" autoSize="false"></TextBox>
+	 <TextBox  name="txt"  x="40"  y="40" layoutWidth="150" layoutHeight="13" bgColor="#DFDFDF" fgColor="#000000"  fontSize="13"textAlign="CENTER_LEFT" autoSize="false"></TextBox>
+	 <TextBox  name="prompt"  x="40"  y="60" layoutWidth="100" layoutHeight="13" bgColor="#DFDFDF" fgColor="#000000"  fontSize="13"textAlign="CENTER_LEFT" autoSize="false"></TextBox>
+	 <Button  name="cancle"  x="5"  y="260" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancelp.png" imageReleased="cancel.png"></Button>
+	 <Button  name="clear"  x="93"  y="260" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="18" enabled="TRUE" bell="1" imagePressed="clearp.png" imageReleased="clear.png"></Button>
+	 <Button  name="enter"  x="182"  y="260" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enterp.png" imageReleased="enter.png"></Button>
+    </Page>
+	
+	
+	<Page name="processing.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="processing.png"></PictureBox>
+    </Page>
+	
+	<Page name="nopaper.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+		<PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="out_off_paper.png"></PictureBox>
+		<Button  name="cancle"  x="5"  y="260" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancelp.png" imageReleased="cancel.png"></Button>
+		<Button  name="enter"  x="182"  y="260" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enterp.png" imageReleased="enter.png"></Button>
+	</Page>
+	
+	<Page name="ScreenSaver1.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="ScreenSaver1.png"></PictureBox>
+    </Page>
+	
+	<Page name="ScreenSaver2.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="ScreenSaver2.png"></PictureBox>
+    </Page>
+	
+	<Page name="ScreenSaver3.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="ScreenSaver3.png"></PictureBox>
+    </Page>
+	
+	<Page name="ScreenSaver4.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="ScreenSaver4.png"></PictureBox>
+    </Page>
+	
+	<Page name="exit.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+	 <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="exit_bg.png"></PictureBox>
+	 <Button  name="cancel"  x="5"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancelp.png" imageReleased="cancel.png"></Button>
+	 <Button  name="enter"  x="182"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enterp.png" imageReleased="enter.png"></Button>
+   </Page>
+   
+   <Page name="complete.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+	<PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="complete.png"></PictureBox>
+	<Button  name="continue"  x="182"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enterp.png" imageReleased="enter.png"></Button>
+   </Page>
+   
+   <Page name="print.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+      <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="printing.png"></PictureBox>
+   </Page>
+   
+   <Page name="scanning.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+     <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="scanning.png"></PictureBox>
+   </Page>
+
+   <Page name="scan_failed.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+    <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="scan_failed.png"></PictureBox>
+    <Button  name="continue"  x="182"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="enterp.png" imageReleased="enter.png"></Button>
+   </Page>
+   
+   <Page name="scan_success.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+    <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="scan_finish.png"></PictureBox>
+    <TextBox  name="txt"  x="5"  y="195" layoutWidth="220" layoutHeight="27" fgColor="#000000" fontSize="27" textAlign="CENTER_CENTER"></TextBox>
+    <Button  name="getTicket"  x="56"  y="190" layoutWidth="151" layoutHeight="60" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="16" enabled="TRUE" bell="1" imagePressed="getTicket.png" imageReleased="getTicket.png"></Button>
+   </Page>
+   
+   <Page name="scan_result.xml" title="home" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#FFFFFFFF">
+    <PictureBox name="logo" x="0" y="0" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="scan_result.png"></PictureBox>
+    <Button  name="cancel"  x="5"  y="255" layoutWidth="53" layoutHeight="29" fgColor="#FF000000"  fontSize="20" textAlign="CENTER_CENTER" imageAlign="CENTER_CENTER" key="17" enabled="TRUE" bell="1" imagePressed="cancelp.png" imageReleased="cancel.png"></Button>
+   </Page>
+   
+   <Page name="boot_animation.xml" title="home" x="0" y="0" layoutWidth="240" layoutHeight="320" bgColor="#FFFFFFFF">
+    <PictureBox name="logo" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="boot.gif"></PictureBox>
+   </Page>
+   
+   <Page name="remove_card.xml" title="home" x="0" y="0" layoutWidth="240" layoutHeight="320" bgColor="#FFFFFFFF">
+    <PictureBox name="logo" x="0" y="20" layoutWidth="240" layoutHeight="300" bgColor="#000000" transparent="255" imageAlign="CENTER_CENTER" imagePath="remove_card.png"></PictureBox>
+   </Page>
+   
+ </Screen>
+ 
+ <Screen name="480x272" width="480" height="272">
+ 
+    <Page name="SYS_STATUSBAR.xml" title="home" x="0" y="0" layoutWidth="480" layoutHeight="20" bgColor="#000000">
+         <TextBox  name="StatusbarTextTime" x="195" y="0" layoutWidth="80" layoutHeight="20" fgColor="#FFFFFF" fontSize="18" textAlign="CENTER_CENTER"></TextBox>
+    </Page>
+	  
+ </Screen>
+ 
+</Root>
+
+

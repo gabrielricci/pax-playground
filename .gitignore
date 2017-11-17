@@ -1,0 +1,5 @@
+*.o
+*.aip
+app/pkg/*
+App
+app.nostrip
