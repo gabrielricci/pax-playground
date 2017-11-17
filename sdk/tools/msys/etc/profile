@@ -1,0 +1,15 @@
+# Phoenix Shell Version 1.0
+# Copyright (C) 2008, Martin Tang
+#
+# Last Revision: 2008.08.26
+
+# Setup basic environments
+export MSYSTEM=MINGW32
+export PS1='\[\033]0;$MSYSTEM:\w\007\n\033[32m\]\u@\h \[\033[33m\w\033[0m\n$ '
+export PATH="/bin:/mingw/bin:/insight/bin:$PATH"
+export HOME="/home/`id -un`"
+export INFOPATH="/share/info:/mingw/info"
+export HISTFILE="$HOME/.bash_history"
+export MAKE_MODE=unix
+export TERM=cygwin
+export LC_ALL='c'

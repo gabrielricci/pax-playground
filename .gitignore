@@ -1,0 +1,10 @@
+**/.*.o
+**/*.aip
+**/*.log
+**/.DS_Store
+
+app/pkg/*
+App
+app.nostrip
+
+tools/.vagrant
